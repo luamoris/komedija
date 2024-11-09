@@ -1,2 +1,1 @@
-# komedija
-STANDUP
+# STANDUP KOMEDIJA
