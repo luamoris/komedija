@@ -99,5 +99,17 @@ class BG {
 
 const bg = new BG();
 
+const LOGO = document.getElementById('logo');
 
+let STYLE_TYPE = 1;
+function switchStyle() {
+   STYLE_TYPE = STYLE_TYPE === 1 ? 2 : 1;
+   const style_new = `var(--color_${STYLE_TYPE}_bg)`;
+   return style_new;
+}
+
+LOGO.addEventListener('click', event => {
+   event.preventDefault();
+   document.documentElement.style.setProperty('--color_bg', switchStyle());
+});
 
