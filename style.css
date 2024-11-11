@@ -196,6 +196,7 @@
    line-height: 1.6;
    color: rgba(0, 0, 0, 1);
 
+   margin-top: 10px;
    display: flex;
    flex-direction: column;
 }
@@ -230,7 +231,7 @@
 .footer {
    width: 100%;
    display: flex;
-   align-items: end;
+   align-items: center;
    justify-content: center;
 }
 
@@ -263,7 +264,7 @@
    position: relative;
    display: block;
    width: 100%;
-   padding: 20px;
+   /* padding: 20px; */
 }
 
 .poster-pic {
@@ -275,9 +276,9 @@
    transition: transform 150ms ease-out;
 }
 
-.poster-pic:hover {
+/* .poster-pic:hover {
    transform: scale(1.02);
-}
+} */
 
 /* ========== ANIMATION ========== */
 
