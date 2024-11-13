@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+
+   <!-- STANDART -->
    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="msapplication-tap-highlight" content="no">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>KOMEDIJA</title>
+
+   <!-- INFO -->
+   <meta name="author" content="IOSIF ISACHKO (LUAMORIS)">
+   <meta name="title" content="Комедия и стендап шоу в Дюссельдорфе – Афиша и Билеты">
+   <meta name="description"
+      content="Русскоязычные стендап шоу в NRW (Дюссельдорф)! Афиша комедийных мероприятий, open mic и билеты. Присоединяйтесь к нашим ярким шоу!" />
+   <meta name="keywords"
+      content="KOMEDIJA STANDUP, standup komedija, stand-up komedija, stand up komedija, komedija standup, komedija stand up, komedija stand-up, комедия, стендап комедия, stand-up комедия, комедия NRW, комедия Дюссельдорф, комедия Düsseldorf, comedy Düsseldorf, комедия Кёльн, комедия Кельн, comedy Köln, comedy Cologne, юмор, смех, Humor, Lachen, афиша стендап комедия, афиша комедия, афиша Дюссельдорф, афиша Кёльн, афиша Кельн, афиша стендап Дюссельдорф, афиша стендап Кёльн, афиша стендап Кельн, stand-up show poster, comedy poster, stand-up poster, stand-up show Düsseldorf, stand-up show Cologne, stand-up show Köln, русскоязычные комики Германия, стендап шоу Германия, русская комедия Германия, билеты на стендап, купить билеты на стендап, tickets stand-up, comedy tickets, stand-up tickets Düsseldorf, comedy tickets Cologne, comedy tickets Köln, stand-up Köln билеты, стендап open mic, открытый микрофон стендап, open mic stand-up, open mic Düsseldorf, бесплатный стендап Дюссельдорф, бесплатный stand-up Düsseldorf, free comedy show Düsseldorf, Stand Up Community Komedija" />
+
+   <!-- OG INFO -->
+   <meta name="og:type" content="website">
+   <meta name="og:title" content="Комедия и стендап шоу в Дюссельдорфе – Афиша и Билеты">
+   <meta name="og:image" content="./icon.ico"> <!-- path -->
+   <meta name="og:description"
+      content="Русскоязычные стендап шоу в NRW (Дюссельдорф)! Афиша комедийных мероприятий, open mic и билеты. Присоединяйтесь к нашим ярким шоу!">
+   <meta property="og:url" content="https://luamoris.github.io/komedija/" /> <!-- path -->
+
+   <!-- LINK -->
+   <link rel="canonical" href="https://luamoris.github.io/komedija/" /> <!-- path -->
+
+   <!-- STYLE -->
+   <link rel="stylesheet" href="./style/STYLE.CSS">
+
+   <!-- TITLE -->
+   <title>Комедия и стендап шоу в Дюссельдорфе – Афиша и Билеты</title>
+
+   <!-- JSON-LD FILE -->
+   <script type="application/ld+json" src="./event-info.json"></script>
+
+   <script>
+      // Проверка локального хранилища и установка темы при загрузке страницы
+      window.addEventListener('DOMContentLoaded', function () {
+         const number = localStorage.getItem('scheme') || '1';
+         const theme = '_scheme_color_' + number;
+         document.body.classList.add(theme);
+      });
+   </script>
+
 </head>
 
 <body>
 
+   <!-- WRAPPER -->
    <div class="wrapper">
       <div class="app">
          <div class="app-container">
@@ -28,39 +69,45 @@
 
                   <ul class="network">
                      <!-- instagram -->
-                     <a href="https://www.instagram.com/standupkomedija" class="net" target="_blank">
+                     <a href="https://www.instagram.com/standupkomedija" class="net _instagram" target="_blank">
                         <div class="neticon-box">
-                           <img src="./img/networks/instagram.svg" alt="" class="neticon">
+                           <img src="./img/networks/instagram.svg" alt="Instagram account Stand Up Komedija."
+                              class="neticon _untouch">
                         </div>
-                        <p class="nettitle">instagram</p>
+                        <p class="nettitle _untouch">instagram</p>
                      </a>
                      <!-- telegram -->
-                     <a href="https://t.me/standupkomedija" class="net" target="_blank">
+                     <a href="https://t.me/standupkomedija" class="net _telegram" target="_blank">
                         <div class="neticon-box">
-                           <img src="./img/networks/telegram.svg" alt="" class="neticon">
+                           <img src="./img/networks/telegram.svg" alt="Telegram account Stand Up Komedija."
+                              class="neticon _untouch">
                         </div>
-                        <p class="nettitle">telegram</p>
+                        <p class="nettitle _untouch">telegram</p>
                      </a>
                      <!-- youtube -->
-                     <a href="https://www.youtube.com/@skomedija" class="net" target="_blank">
+                     <a href="https://www.youtube.com/@skomedija" class="net _youtube" target="_blank">
                         <div class="neticon-box">
-                           <img src="./img/networks/youtube.svg" alt="" class="neticon">
+                           <img src="./img/networks/youtube.svg" alt="YouTube account Stand Up Komedija."
+                              class="neticon _untouch">
                         </div>
-                        <p class="nettitle">youtube</p>
+                        <p class="nettitle _untouch">youtube</p>
                      </a>
                      <!-- tik tok -->
-                     <a href="https://www.tiktok.com/@standupkomedija" class="net" target="_blank">
+                     <a href="https://www.tiktok.com/@standupkomedija" class="net _tt" target="_blank">
                         <div class="neticon-box">
-                           <img src="./img/networks/tiktok.svg" alt="" class="neticon">
+                           <img src="./img/networks/tiktok.svg" alt="Tik Tok account Stand Up Komedija."
+                              class="neticon _untouch">
                         </div>
-                        <p class="nettitle">tik tok</p>
+                        <p class="nettitle _untouch">tik tok</p>
                      </a>
                   </ul>
 
                   <div class="poster">
+                     <!-- Изображение -->
                      <div class="poster-box">
-                        <img class="poster-pic" src="./img/posters/poster_4.png" alt="Stand Up Open Mic 4.">
+                        <img class="poster-pic _untouch" src="./img/posters/poster_4.png" alt="Stand Up Open Mic 4.">
                      </div>
+                     <!-- Информация -->
                      <div class="poster-text">
                         <p class="poster__item poster__title">ПРИБЛИЖАЕТСЯ НОВЫЙ OPEN MIC 4!</p>
                         <p class="poster__item poster__desc">Приглашаем Вас отлично провести время и хорошенько
@@ -75,7 +122,7 @@
 
                <!-- FOOTER -->
                <footer class="footer">
-                  <p class="footer__title">Stand Up Kommunity "KOMEDIJA"</p>
+                  <p class="footer__title">&copy; Stand Up Community "KOMEDIJA". Все права защищены.</p>
                </footer>
 
             </div>
@@ -84,17 +131,12 @@
       </div>
    </div>
 
-   <!-- <div class="content">
-      <a class="logo-box" href="https://www.instagram.com/standupkomedija?igsh=bDdtdzRpNGNyY3N5" target="_blank">
-         <img class="logo-pic" src="./img/komedija_standup.svg" alt="Stand Up Komedija logotype.">
-      </a>
-   </div> -->
-
+   <!-- BG -->
    <div class="screen _unuse">
       <div id="bg" class="screen-box"></div>
    </div>
 
-   <script src="./main.js"></script>
+   <script type="module" src="./main.js" defer></script>
 </body>
 
 </html>

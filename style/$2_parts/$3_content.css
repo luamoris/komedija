@@ -1,0 +1,64 @@
+/* =================================
+   CONTENT
+==================================== */
+
+.content {
+   width: calc(100% -40px);
+   height: calc(100vh - 60px);
+   display: grid;
+   grid-template-rows: auto 1fr 40px;
+}
+
+/* ========== HEADER ========== */
+
+.header {
+   width: 100%;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+}
+
+/* ========== MIDDLE ========== */
+
+.middle {
+   padding: 40px 10px 10px 10px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {
+   .content {
+      width: calc(100% -20px);
+      height: calc(100vh - 50px);
+      display: grid;
+      grid-template-rows: auto 1fr 40px;
+   }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -1,0 +1,26 @@
+/* =================================
+   FOOTER
+==================================== */
+
+.footer__title {
+   font-size: var(--h6);
+   color: rgba(255, 255, 255, 0.8);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

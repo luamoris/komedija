@@ -1,0 +1,38 @@
+/* =================================
+   HEADER
+==================================== */
+
+/* ========== LOGO ========== */
+
+.logo-box {
+   display: block;
+   max-width: 400px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logo-pic {
+   width: 80%;
+   cursor: pointer;
+   transition: transform 200ms ease-out;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

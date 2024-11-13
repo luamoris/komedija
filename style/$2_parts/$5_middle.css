@@ -1,0 +1,202 @@
+/* =================================
+   MIDDLE
+==================================== */
+
+/* ========== NETWORK ========== */
+
+.network {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.net {
+   position: relative;
+   overflow: hidden;
+
+   margin: 2px;
+   max-width: 450px;
+   width: 100%;
+   height: 50px;
+
+   display: flex;
+   align-items: center;
+
+   border-radius: 10px;
+   border: 1px solid rgba(255, 255, 255, .1);
+   background: var(--netcard);
+   backdrop-filter: blur(1px);
+
+   text-decoration: none;
+   transition: border-color 150ms ease-in-out;
+
+   cursor: var(--cursor-pointer);
+}
+
+.net:hover {
+   border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.neticon-box {
+   width: 50px;
+   height: 50px;
+   padding: 10px;
+}
+
+.neticon {
+   width: 100%;
+   height: 100%;
+}
+
+.nettitle {
+   font-size: var(--h4);
+   font-weight: 500;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 1);
+}
+
+/* .net::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 50%;
+   right: -50.5%;
+   width: 100%;
+   height: 40px;
+   opacity: 0.05;
+   transform: translateY(-50%);
+}
+
+.net._instagram::after {
+   background: url("./img/networks/instagram.svg") repeat;
+   background-size: 20px 20px;
+}
+
+.net._telegram::after {
+   background: url("./img/networks/telegram.svg") repeat;
+   background-size: 20px 20px;
+}
+
+.net._youtube::after {
+   background: url("./img/networks/youtube.svg") repeat;
+   background-size: 20px 20px;
+}
+
+.net._tt::after {
+   background: url("./img/networks/tiktok.svg") repeat;
+   background-size: 20px 20px;
+} */
+
+/* ========== POSTER ========== */
+
+.poster {
+   margin-top: 20px;
+   padding: 20px;
+   max-width: 600px;
+   width: 100%;
+   border-radius: 14px;
+   background-color: var(--color-poster-bg);
+}
+
+.poster-box {
+   position: relative;
+   display: block;
+   width: 100%;
+}
+
+.poster-pic {
+   width: 100%;
+   cursor: pointer;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   transition: transform 150ms ease-out;
+}
+
+.poster-text {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+
+   font-size: var(--h4);
+   color: var(--text-color);
+}
+
+.poster__item {
+   width: 100%;
+   margin-bottom: 12px;
+}
+
+.poster__title {
+   margin-top: 10px;
+   font-weight: 600;
+   font-size: var(--h3);
+}
+
+.poster__desc {
+   width: 90%;
+   line-height: 1.4;
+}
+
+.poster__date {
+   font-weight: 500;
+}
+
+.poster__map {
+   font-weight: 500;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {
+
+   .poster {
+      border-radius: 10px;
+   }
+
+   .poster-text {
+      font-size: 14px;
+   }
+
+   .poster__title {
+      font-size: 16px;
+   }
+
+   .poster__desc {
+      line-height: 1.2;
+      width: 100%;
+   }
+}
+
+@media (max-width: 425px) {
+   .net {
+      margin: 2px;
+      max-width: 450px;
+      width: 100%;
+      height: 40px;
+   }
+
+   .neticon-box {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+   }
+
+   .nettitle {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

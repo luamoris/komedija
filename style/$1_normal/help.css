@@ -1,0 +1,38 @@
+/* =================================
+   HELP
+==================================== */
+
+._unuse {
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   pointer-events: none;
+   user-select: none;
+   cursor: none;
+}
+
+._untouch {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   touch-action: none;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

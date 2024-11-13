@@ -1,0 +1,88 @@
+/* =================================
+   FONTS 
+==================================== */
+
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* =================================
+   ROOT 
+==================================== */
+
+:root {
+   /* Шрифт */
+   --f-family: "Rubik", sans-serif;
+   --f-optical-sizing: auto;
+   --f-weight: 400;
+   --f-style: normal;
+
+   --color_bg: rgba(255, 255, 255, 1);
+
+   /* Убирает синий фон объектов которые выделяются */
+   --tap-bg: rgba(0, 0, 0, 0);
+
+   /* Цвет выделенного текста */
+   --selection: rgba(0, 0, 0, 0.2);
+
+   /* PX */
+   --h3: 18px;
+   --h4: 16px;
+   --h5: 14px;
+   --h6: 12px;
+
+   /* Pointer */
+   --cursor-pointer: url('/img/cursor.png'), pointer;
+}
+
+
+/* =================================
+   ROOT COLORS
+==================================== */
+
+._scheme_color_1 {
+   --color_bg: linear-gradient(60deg, #27118D, #A651FD);
+   --color-square-border: rgba(255, 255, 255, .1);
+   --netcard: rgba(0, 0, 0, 0.1);
+
+   /* POSTER */
+   --color-poster-bg: rgba(255, 255, 255, 1);
+   --text-color: rgba(45, 45, 45, 1);
+}
+
+._scheme_color_2 {
+   --color_bg: linear-gradient(60deg, #141414, #1F1F1F);
+   --color-square-border: rgba(255, 255, 255, .05);
+   --netcard: rgba(255, 255, 255, 0.1);
+
+   /* POSTER */
+   --color-poster-bg: rgba(255, 255, 255, 1);
+   --text-color: rgba(45, 45, 45, 1);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+   :root {
+      --h6: 10px;
+   }
+}
+
+@media (max-width: 500px) {
+   :root {
+      --h3: 16px;
+      --h4: 14px;
+      --h5: 12px;
+   }
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */
