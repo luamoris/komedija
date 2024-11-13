@@ -46,7 +46,11 @@
 
 @media (max-width: 768px) {}
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+   .middle {
+      padding: 30px 10px 10px 10px;
+   }
+}
 
 @media (max-width: 425px) {
    .content {
