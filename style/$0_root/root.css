@@ -47,6 +47,7 @@
    /* POSTER */
    --color-poster-bg: rgba(255, 255, 255, 1);
    --text-color: rgba(45, 45, 45, 1);
+   --text-color-50: rgba(45, 45, 45, 0.5);
 }
 
 ._scheme_color_2 {
@@ -57,6 +58,7 @@
    /* POSTER */
    --color-poster-bg: rgba(255, 255, 255, 1);
    --text-color: rgba(45, 45, 45, 1);
+   --text-color-50: rgba(45, 45, 45, 0.5);
 }
 
 /* =================================
@@ -73,9 +75,9 @@
 
 @media (max-width: 500px) {
    :root {
-      --h3: 16px;
-      --h4: 14px;
-      --h5: 12px;
+      --h3: 15px;
+      --h4: 13px;
+      --h5: 11px;
    }
 }
 

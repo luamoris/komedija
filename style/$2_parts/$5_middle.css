@@ -148,6 +148,50 @@
    font-weight: 500;
 }
 
+/* ========== LIKE ========== */
+
+.like {
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}
+
+.like-count {
+   margin-right: 6px;
+   font-weight: 500;
+   font-size: var(--h4);
+   color: var(--text-color-50);
+}
+
+.like-box {
+   width: 20px;
+   height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.like-pic {
+   width: 100%;
+   cursor: pointer;
+   object-fit: cover;
+}
+
+.like-pic path {
+   fill: rgba(221, 60, 60, 0.1);
+   transition: fill 150ms ease-out;
+}
+
+.like-pic:hover path {
+   fill: rgba(221, 60, 60, 0.5);
+}
+
+.like-pic._active path {
+   fill: rgba(221, 60, 60, 1);
+}
+
+
 /* =================================
    MEDIA
 ==================================== */
@@ -180,7 +224,7 @@
    .net {
       margin: 2px;
       max-width: 450px;
-      width: 100%;
+      width: 94%;
       height: 40px;
    }
 
