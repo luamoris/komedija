@@ -15,7 +15,7 @@
       }
    },
    "image": [
-      "./img/poster_4_original.jpg"
+      "https://raw.githubusercontent.com/luamoris/komedija/refs/heads/main/img/posters/poster_4_original.jpg"
    ],
    "description": "Приходите на яркое русскоязычное стендап шоу в Дюссельдорфе! Отличное настроение гарантировано.",
    "offers": {
