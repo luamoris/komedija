@@ -25,5 +25,5 @@ function schemeUpdate() {
 
 schemeUpdate();
 
-const LOGO = document.getElementById('logo');
-scheme.init(LOGO, schemeNumber => schemeLS.set(schemeNumber));
+const btnSwitchEl = document.getElementById('btnSwitch');
+scheme.init(btnSwitchEl, schemeNumber => schemeLS.set(schemeNumber));

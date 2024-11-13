@@ -127,21 +127,24 @@
 
 .poster__item {
    width: 100%;
-   margin-bottom: 12px;
+   /* margin-bottom: 12px; */
 }
 
 .poster__title {
    margin-top: 10px;
+   margin-bottom: 8px;
    font-weight: 600;
    font-size: var(--h3);
 }
 
 .poster__desc {
+   margin-bottom: 16px;
    width: 90%;
    line-height: 1.4;
 }
 
 .poster__date {
+   margin-bottom: 6px;
    font-weight: 500;
    font-size: var(--h5);
 }
@@ -195,6 +198,64 @@
 .like-pic._active path {
    fill: rgba(235, 79, 79, 1);
    stroke: rgba(221, 60, 60, 1);
+}
+
+/* ========== SETTINGS ========== */
+
+.setting {
+   margin-bottom: 4px;
+   max-width: 450px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.switch {
+   width: 42px;
+   height: 22px;
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   border-radius: 40px;
+
+   display: flex;
+   align-items: center;
+
+   background-color: rgba(255, 255, 255, .05);
+
+   cursor: pointer;
+}
+
+.btn-box {
+   height: 16px;
+   width: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transform: translateX(2px);
+   transition: transform 200ms ease-out;
+}
+
+.switch-pic {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+body._scheme_color_1 .btn-box {
+   transform: translateX(2px);
+}
+
+body._scheme_color_1 .switch-pic path {
+   fill: #ffffff;
+}
+
+body._scheme_color_2 .btn-box {
+   transform: translateX(20px);
+}
+
+body._scheme_color_2 .switch-pic path {
+   fill: #c286ff;
 }
 
 
