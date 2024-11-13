@@ -154,13 +154,14 @@
    width: 100%;
    display: flex;
    justify-content: end;
-   align-items: end;
+   align-items: center;
 }
 
 .like-count {
    margin-right: 6px;
-   font-weight: 500;
-   font-size: var(--h4);
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 0;
    color: var(--text-color-50);
 }
 
@@ -179,7 +180,7 @@
 }
 
 .like-pic path {
-   fill: rgba(221, 60, 60, 0.1);
+   /* fill: rgba(221, 60, 60, 0.1); */
    transition: fill 150ms ease-out;
 }
 
@@ -217,6 +218,11 @@
    .poster__desc {
       line-height: 1.2;
       width: 100%;
+   }
+
+   .like-box {
+      width: 16px;
+      height: 16px;
    }
 }
 
