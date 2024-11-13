@@ -15,6 +15,7 @@ class LocalStorageManager {
       }
    }
 
+
    get() {
       try {
          const value = localStorage.getItem(this.key);

@@ -1,7 +1,7 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getFirestore, doc, getDoc, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
-
+import LocalStorageManager from "./javascript/LocalStorageManager.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -51,6 +51,8 @@ class Counter {
    }
 }
 
+const likeLS = new LocalStorageManager('like');
+
 const counter = new Counter("counters", "like");
 const likePressEl = document.getElementById('likePress');
 const likeCounterEl = document.getElementById('likeCount');
@@ -65,8 +67,17 @@ async function counterStart() {
       const newValue = await counter.incrementValue();
       LIKE_COUNT += 1;
       likeCounterEl.textContent = LIKE_COUNT;
+      likePressEl.classList.add('_active');
+      likeLS.set(true);
       // console.log("Обновлённое значение счётчика:", newValue);
    });
 }
 
+function likeUpdate() {
+   if (likeLS.has()) {
+      likePressEl.classList.add('_active');
+   }
+}
+
+likeUpdate();
 await counterStart();

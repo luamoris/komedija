@@ -108,11 +108,12 @@
 
 .poster-pic {
    width: 100%;
-   cursor: pointer;
    height: 100%;
    object-fit: cover;
    display: block;
    transition: transform 150ms ease-out;
+
+   cursor: var(--cursor-pointer);
 }
 
 .poster-text {
@@ -142,10 +143,16 @@
 
 .poster__date {
    font-weight: 500;
+   font-size: var(--h5);
 }
 
 .poster__map {
+   width: max-content;
    font-weight: 500;
+   font-size: var(--h5);
+   /* padding: 2px 6px; */
+   /* border-radius: 2px; */
+   /* background-color: rgba(0, 0, 0, .1); */
 }
 
 /* ========== LIKE ========== */
@@ -171,11 +178,12 @@
    display: flex;
    align-items: center;
    justify-content: center;
+
+   cursor: pointer;
 }
 
 .like-pic {
    width: 100%;
-   cursor: pointer;
    object-fit: cover;
 }
 
@@ -184,18 +192,21 @@
    transition: fill 150ms ease-out;
 }
 
-.like-pic:hover path {
-   fill: rgba(221, 60, 60, 0.5);
-}
-
 .like-pic._active path {
-   fill: rgba(221, 60, 60, 1);
+   fill: rgba(235, 79, 79, 1);
+   stroke: rgba(221, 60, 60, 1);
 }
 
 
 /* =================================
    MEDIA
 ==================================== */
+
+@media (hover: hover) and (pointer: fine) {
+   .like-pic:hover path {
+      fill: rgba(221, 60, 60, 0.5);
+   }
+}
 
 @media (max-width: 1024px) {}
 
