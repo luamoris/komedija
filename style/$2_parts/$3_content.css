@@ -4,7 +4,7 @@
 
 .content {
    width: calc(100% -40px);
-   height: calc(100vh - 60px);
+   height: calc(100vh - 50px);
    display: grid;
    grid-template-rows: auto 1fr 40px;
 }

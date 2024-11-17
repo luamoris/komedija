@@ -27,3 +27,15 @@ schemeUpdate();
 
 const btnSwitchEl = document.getElementById('btnSwitch');
 scheme.init(btnSwitchEl, schemeNumber => schemeLS.set(schemeNumber));
+
+// Copy
+
+const infoBtnEl = document.getElementById('infoCopyBtn');
+infoBtnEl.addEventListener('click', () => {
+   const infoText = infoBtnEl.querySelector('[data-info="true"]').textContent;
+   navigator.clipboard.writeText(infoText);
+   infoBtnEl.classList.toggle('_copied');
+   setTimeout(() => {
+      infoBtnEl.classList.toggle('_copied');
+   }, 500);
+});

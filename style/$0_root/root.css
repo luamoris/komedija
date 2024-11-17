@@ -25,13 +25,14 @@
    --selection: rgba(0, 0, 0, 0.2);
 
    /* PX */
+   --h2: 24px;
    --h3: 18px;
    --h4: 16px;
    --h5: 14px;
    --h6: 12px;
 
    /* Pointer */
-   --cursor-pointer: url('/img/cursor.png'), pointer;
+   --cursor-pointer: url('./img/cursor.png'), pointer;
 }
 
 
@@ -39,17 +40,24 @@
    ROOT COLORS
 ==================================== */
 
+/* ЗИМА */
 ._scheme_color_1 {
-   --color_bg: linear-gradient(60deg, #27118D, #A651FD);
+   --color_bg: linear-gradient(60deg, #005CA7, #297D86);
    --color-square-border: rgba(255, 255, 255, .1);
    --netcard: rgba(0, 0, 0, 0.1);
 
    /* POSTER */
    --color-poster-bg: rgba(255, 255, 255, 1);
-   --text-color: rgba(45, 45, 45, 1);
-   --text-color-50: rgba(45, 45, 45, 0.5);
+   --text-color: rgba(0, 0, 0, .8);
+   --text-color-50: rgba(102, 102, 102, 1);
+   --text-color-hover: rgb(101, 121, 236);
+
+   /* Switcher */
+   --switch-fill: #ffffff;
+
 }
 
+/* ТЕМНАЯ */
 ._scheme_color_2 {
    --color_bg: linear-gradient(60deg, #141414, #1F1F1F);
    --color-square-border: rgba(255, 255, 255, .05);
@@ -57,8 +65,29 @@
 
    /* POSTER */
    --color-poster-bg: rgba(255, 255, 255, 1);
-   --text-color: rgba(45, 45, 45, 1);
-   --text-color-50: rgba(45, 45, 45, 0.5);
+   --text-color: rgba(0, 0, 0, .8);
+   --text-color-50: rgba(102, 102, 102, 1);
+   --text-color-hover: rgb(101, 121, 236);
+
+   /* Switcher */
+   --switch-fill-1: #5acedb;
+   --switch-fill-2: #c286ff;
+}
+
+/* MAIN ОСЕНЬ */
+._scheme_color_3 {
+   --color_bg: linear-gradient(60deg, #27118D, #A651FD);
+   --color-square-border: rgba(255, 255, 255, .1);
+   --netcard: rgba(0, 0, 0, 0.1);
+
+   /* POSTER */
+   --color-poster-bg: rgba(255, 255, 255, 1);
+   --text-color: rgba(0, 0, 0, .8);
+   --text-color-50: rgba(102, 102, 102, 1);
+   --text-color-hover: rgb(101, 121, 236);
+
+   /* Switcher */
+   --switch-fill: #ffffff;
 }
 
 /* =================================
@@ -75,9 +104,10 @@
 
 @media (max-width: 500px) {
    :root {
+      --h2: 20px;
       --h3: 15px;
-      --h4: 13px;
-      --h5: 11px;
+      --h4: 12px;
+      --h5: 10px;
    }
 }
 
