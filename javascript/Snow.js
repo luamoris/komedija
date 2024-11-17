@@ -27,7 +27,7 @@ class Snowfall {
 
    // Генерация снежинки
    createSnowflake() {
-      const size = Math.random() * 5 + 2; // Размер снежинки
+      const size = Math.random() * 3 + 1; // Размер снежинки
       this.snowflakes.push({
          x: Math.random() * this.canvas.width,
          y: -size, // Начальная позиция выше экрана
@@ -98,6 +98,42 @@ class Snowfall {
    resizeCanvas() {
       this.canvas.width = window.innerWidth;
       this.canvas.height = window.innerHeight;
+   }
+
+   // Раздувание снежинок от центра
+   burstSnowflakes() {
+      const centerX = this.canvas.width / 2;
+      const centerY = this.canvas.height / 2;
+
+      for (const snowflake of this.snowflakes) {
+         const dx = snowflake.x - centerX;
+         const dy = snowflake.y - centerY;
+         const distance = Math.sqrt(dx * dx + dy * dy);
+
+         // Нормализуем направление и задаем ускорение
+         const force = 10; // Сила разлета
+         snowflake.vx = (dx / distance) * force; // Временное смещение по X
+         snowflake.vy = (dy / distance) * force; // Временное смещение по Y
+      }
+
+      // Постепенно уменьшаем влияние разлета за 500 мс
+      const duration = 500; // Длительность эффекта
+      const step = 20; // Частота обновления (в мс)
+      let elapsed = 0;
+
+      const interval = setInterval(() => {
+         elapsed += step;
+         const factor = 1 - elapsed / duration; // Уменьшающийся коэффициент
+
+         for (const snowflake of this.snowflakes) {
+            snowflake.x += snowflake.vx * factor;
+            snowflake.y += snowflake.vy * factor;
+         }
+
+         if (elapsed >= duration) {
+            clearInterval(interval); // Останавливаем интервал после 500 мс
+         }
+      }, step);
    }
 }
 

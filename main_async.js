@@ -2,6 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getFirestore, doc, getDoc, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 import LocalStorageManager from "./javascript/LocalStorageManager.js";
+import Snowfall from "./javascript/Snow.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -42,7 +43,7 @@ class Counter {
          const currentValue = await this.getCurrentValue();
          const newValue = currentValue + amount;
          await updateDoc(this.counterRef, { value: newValue });
-         console.log(`Счётчик увеличен на ${amount}. Новое значение: ${newValue}`);
+         // console.log(`Счётчик увеличен на ${amount}. Новое значение: ${newValue}`);
          return newValue;
       } catch (error) {
          console.error("Ошибка при увеличении счётчика:", error);
@@ -56,6 +57,7 @@ const likeLS = new LocalStorageManager('like');
 const counter = new Counter("counters", "like");
 const likePressEl = document.getElementById('likePress');
 const likeCounterEl = document.getElementById('likeCount');
+const snowfall = new Snowfall('snowCanvas', 50, 200);
 
 async function counterStart() {
 
@@ -64,6 +66,7 @@ async function counterStart() {
    likeCounterEl.textContent = LIKE_COUNT;
 
    likePressEl.addEventListener('click', async () => {
+      snowfall.burstSnowflakes();
       const newValue = await counter.incrementValue();
       LIKE_COUNT += 1;
       likeCounterEl.textContent = LIKE_COUNT;
