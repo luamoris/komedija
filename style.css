@@ -9,3 +9,6 @@
 @import url('./style/$2_parts/$4_header.css');
 @import url('./style/$2_parts/$5_middle.css');
 @import url('./style/$2_parts/$6_footer.css');
+
+
+@import url('./style/$3_animation/snow.css');

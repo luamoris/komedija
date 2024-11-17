@@ -1,0 +1,34 @@
+/* =================================
+   SNOW
+==================================== */
+
+canvas {
+   z-index: 2;
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   user-select: none;
+   cursor: none;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

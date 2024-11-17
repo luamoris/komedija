@@ -5,12 +5,14 @@
 import BG from "./javascript/Bg.js";
 import SchemeColor from "./javascript/SchemeColor.js";
 import LocalStorageManager from "./javascript/LocalStorageManager.js";
+import Snowfall from "./javascript/Snow.js";
 
 // ========== VALUES
 
 const bg = new BG();
 const scheme = new SchemeColor();
 const schemeLS = new LocalStorageManager('scheme');
+const snowfall = new Snowfall('snowCanvas', 100, 200);
 
 // ========== MAIN
 
