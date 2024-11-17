@@ -32,7 +32,7 @@
    --h6: 12px;
 
    /* Pointer */
-   --cursor-pointer: url('./img/cursor.png'), pointer;
+   --cursor-pointer: url('https://raw.githubusercontent.com/luamoris/komedija/refs/heads/main/img/cursor.png'), pointer;
 }
 
 
