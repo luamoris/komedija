@@ -117,8 +117,8 @@ class Snowfall {
       }
 
       // Постепенно уменьшаем влияние разлета за 500 мс
-      const duration = 500; // Длительность эффекта
-      const step = 20; // Частота обновления (в мс)
+      const duration = 1200; // Длительность эффекта 500
+      const step = 10; // Частота обновления (в мс) 20
       let elapsed = 0;
 
       const interval = setInterval(() => {
