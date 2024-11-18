@@ -24,6 +24,8 @@
    /* Цвет выделенного текста */
    --selection: rgba(0, 0, 0, 0.2);
 
+   --noimage-bg: rgb(189, 189, 189);
+
    /* PX */
    --h2: 24px;
    --h3: 18px;
@@ -42,7 +44,8 @@
 
 /* ЗИМА */
 ._scheme_color_1 {
-   --color_bg: linear-gradient(60deg, #005CA7, #297D86);
+   --color_bg: linear-gradient(60deg, #005CA7, #2D5399);
+   /* --color_bg: linear-gradient(60deg, #005CA7, #297D86); */
    --color-square-border: rgba(255, 255, 255, .1);
    --netcard: rgba(0, 0, 0, 0.1);
 
@@ -70,7 +73,7 @@
    --text-color-hover: rgb(101, 121, 236);
 
    /* Switcher */
-   --switch-fill-1: #5acedb;
+   --switch-fill-1: #73C0FF;
    --switch-fill-2: #c286ff;
 }
 

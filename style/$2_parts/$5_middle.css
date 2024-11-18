@@ -95,15 +95,22 @@
    margin-top: 20px;
    padding: 20px;
    max-width: 600px;
+   height: auto;
    width: 100%;
    border-radius: 14px;
    background-color: var(--color-poster-bg);
+
+   display: flex;
+   flex-direction: column;
 }
 
 .poster-box {
    position: relative;
-   display: block;
+   display: flex;
+   max-width: 560px;
    width: 100%;
+   aspect-ratio: 1 / 1;
+   background-color: var(--noimage-bg);
 }
 
 .poster-pic {
@@ -366,7 +373,7 @@ body._scheme_color_2 .switch-pic path {
    content: "";
    position: absolute;
    display: block;
-   width: 20px;
+   width: 18px;
    height: 2px;
    background-color: rgb(241, 99, 99);
    transform: rotate(45deg);
