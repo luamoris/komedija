@@ -1,0 +1,4 @@
+User-agent: *  # Разрешить доступ всем поисковым роботам
+Disallow:      # Нет ограничений для сканирования
+
+Sitemap: https://skomedija.com/sitemap.xml
