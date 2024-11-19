@@ -15,6 +15,7 @@
 
 .logo-pic {
    width: 80%;
+   height: auto;
    cursor: pointer;
    transition: transform 200ms ease-out;
 }

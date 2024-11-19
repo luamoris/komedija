@@ -15,12 +15,12 @@
       }
    },
    "image": [
-      "https://raw.githubusercontent.com/luamoris/komedija/refs/heads/main/img/posters/poster_original.jpg"
+      "https://skomedija.com/img/posters/poster_original.jpg"
    ],
    "description": "Приходите на яркое русскоязычное стендап шоу в Дюссельдорфе! Отличное настроение гарантировано.",
    "offers": {
       "@type": "Offer",
-      "url": "https://luamoris.github.io/komedija/",
+      "url": "https://skomedija.com/",
       "price": "0.00",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
