@@ -46,12 +46,16 @@ btnMusic.addEventListener('click', () => {
 
 // Copy
 
-const infoBtnEl = document.getElementById('infoCopyBtn');
-infoBtnEl.addEventListener('click', () => {
-   const infoText = infoBtnEl.querySelector('[data-info="true"]').textContent;
+function copyText(element) {
+   const infoText = element.querySelector('[data-info="true"]').textContent;
    navigator.clipboard.writeText(infoText);
-   infoBtnEl.classList.toggle('_copied');
+   element.classList.toggle('_copied');
    setTimeout(() => {
-      infoBtnEl.classList.toggle('_copied');
+      element.classList.toggle('_copied');
    }, 500);
-});
+}
+
+const info1BtnEl = document.getElementById('infoCopyBtn_1');
+const info2BtnEl = document.getElementById('infoCopyBtn_2');
+info1BtnEl.addEventListener('click', () => copyText(info1BtnEl));
+info2BtnEl.addEventListener('click', () => copyText(info2BtnEl));

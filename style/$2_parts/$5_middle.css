@@ -91,6 +91,16 @@
 
 /* ========== POSTER ========== */
 
+.poster-list {
+   display: grid;
+   grid-template-columns: repeat(2, 600px);
+   gap: 20px;
+   width: 100%;
+   max-width: 1380px;
+   margin: 0 auto;
+   justify-content: center;
+}
+
 .poster {
    margin-top: 20px;
    padding: 20px;
@@ -111,6 +121,8 @@
    width: 100%;
    aspect-ratio: 1 / 1;
    background-color: var(--noimage-bg);
+   border-radius: 4px;
+   overflow: hidden;
 }
 
 .poster-pic {
@@ -132,9 +144,47 @@
    color: var(--text-color);
 }
 
+.poster-top {
+   position: relative;
+   width: 100%;
+   margin-bottom: 12px;
+}
+
+.poster[data-premiere="true"] .poster-top::before {
+   content: "ПРЕМЬЕРА";
+   position: absolute;
+   top: 2px;
+   right: 0;
+   padding: 3px 6px;
+   border-radius: 2px;
+   font-weight: 500;
+   font-size: var(--h6);
+   line-height: 1;
+
+   color: rgba(255, 255, 255, 1);
+   background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffa08c, #ff7eb3);
+   background-size: 300%;
+   animation: gradientAnimation 3s infinite;
+   text-align: center;
+}
+
+/* Анимация градиента */
+@keyframes gradientAnimation {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
 
 .poster__title {
-   margin-bottom: 12px;
    font-weight: 700;
    font-size: var(--h2);
 }
@@ -243,6 +293,7 @@
 /* ========== LIKE ========== */
 
 .like {
+   margin-top: auto;
    width: 100%;
    display: flex;
    justify-content: end;
@@ -394,6 +445,14 @@ body._scheme_color_2 .switch-pic path {
    }
 }
 
+@media (max-width: 1300px) {
+   .poster-list {
+      grid-template-columns: 1fr;
+      gap: 0;
+      justify-items: center;
+   }
+}
+
 @media (max-width: 1024px) {}
 
 @media (max-width: 768px) {}
@@ -412,8 +471,11 @@ body._scheme_color_2 .switch-pic path {
       font-size: 14px;
    }
 
-   .poster__title {
+   .poster-top {
       margin-bottom: 10px;
+   }
+
+   .poster__title {
       font-size: 16px;
    }
 

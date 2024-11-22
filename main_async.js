@@ -52,33 +52,64 @@ class Counter {
    }
 }
 
-const likeLS = new LocalStorageManager('like');
+// ===============================
 
-const counter = new Counter("counters", "like");
-const likePressEl = document.getElementById('likePress');
-const likeCounterEl = document.getElementById('likeCount');
+// Local Storage
+const like1LS = new LocalStorageManager('like1');
+const like2LS = new LocalStorageManager('like2');
+
+// Counter
+const counter1 = new Counter("counters", "like");
+const counter2 = new Counter("counters", "like2");
+
+// HTML Elements LIKE 1
+const like1PressEl = document.getElementById('likePress_1');
+const like1CounterEl = document.getElementById('likeCount_1');
+
+// HTML Elements LIKE 2
+const like2PressEl = document.getElementById('likePress_2');
+const like2CounterEl = document.getElementById('likeCount_2');
+
+// ANIMATION SNOW
 const snowfall = new Snowfall('snowCanvas', 50, 200);
 
 async function counterStart() {
 
-   let LIKE_COUNT = await counter.getCurrentValue();
-   // console.log("Текущее значение счётчика:", LIKE_COUNT);
-   likeCounterEl.textContent = LIKE_COUNT;
+   // LIKE 1
+   let LIKE1_COUNT = await counter1.getCurrentValue();
+   like1CounterEl.textContent = LIKE1_COUNT;
 
-   likePressEl.addEventListener('click', async () => {
+   // LIKE 2
+   let LIKE2_COUNT = await counter2.getCurrentValue();
+   like2CounterEl.textContent = LIKE2_COUNT;
+
+   like1PressEl.addEventListener('click', async () => {
       snowfall.burstSnowflakes();
-      const newValue = await counter.incrementValue();
-      LIKE_COUNT += 1;
-      likeCounterEl.textContent = LIKE_COUNT;
-      likePressEl.classList.add('_active');
-      likeLS.set(true);
-      // console.log("Обновлённое значение счётчика:", newValue);
+      const newValue = await counter1.incrementValue();
+      LIKE1_COUNT += 1;
+      like1CounterEl.textContent = LIKE1_COUNT;
+      like1PressEl.classList.add('_active');
+      like1LS.set(true);
+   });
+
+   like2PressEl.addEventListener('click', async () => {
+      snowfall.burstSnowflakes();
+      const newValue = await counter2.incrementValue();
+      LIKE2_COUNT += 1;
+      like2CounterEl.textContent = LIKE2_COUNT;
+      like2PressEl.classList.add('_active');
+      like2LS.set(true);
    });
 }
 
+// START
+
 function likeUpdate() {
-   if (likeLS.has()) {
-      likePressEl.classList.add('_active');
+   if (like1LS.has()) {
+      like1PressEl.classList.add('_active');
+   }
+   if (like2LS.has()) {
+      like2PressEl.classList.add('_active');
    }
 }
 
