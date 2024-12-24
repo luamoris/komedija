@@ -93,7 +93,7 @@
 
 .poster-list {
    display: grid;
-   grid-template-columns: repeat(2, 600px);
+   grid-template-columns: repeat(1, 600px);
    gap: 20px;
    width: 100%;
    max-width: 1380px;
@@ -442,6 +442,14 @@ body._scheme_color_2 .switch-pic path {
 @media (hover: hover) and (pointer: fine) {
    .like-pic:hover path {
       fill: rgba(221, 60, 60, 0.5);
+   }
+
+   .poster-pic {
+      transition: transform 200ms ease-out;
+   }
+
+   .poster-pic:hover {
+      transform: scale(1.02);
    }
 }
 

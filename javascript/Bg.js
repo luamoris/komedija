@@ -37,8 +37,6 @@ class BG {
          this.balanceGrid(rows, cols)
          this.updateGridCss(rows, cols, length)
       }
-      // console.clear(); // clear
-      // console.log(rows, cols, length); // clear
    }
 
    getSideLength(width) {
