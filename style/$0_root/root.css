@@ -43,7 +43,7 @@
 ==================================== */
 
 /* ЗИМА */
-._scheme_color_1 {
+._scheme_color_0 {
    --color_bg: linear-gradient(60deg, #005CA7, #2D5399);
    /* --color_bg: linear-gradient(60deg, #005CA7, #297D86); */
    --color-square-border: rgba(255, 255, 255, .1);
@@ -78,10 +78,10 @@
 }
 
 /* MAIN ОСЕНЬ */
-._scheme_color_3 {
+._scheme_color_1 {
    --color_bg: linear-gradient(60deg, #27118D, #A651FD);
    --color-square-border: rgba(255, 255, 255, .1);
-   --netcard: rgba(0, 0, 0, 0.1);
+   --netcard: rgba(255, 255, 255, 0.1);
 
    /* POSTER */
    --color-poster-bg: rgba(255, 255, 255, 1);

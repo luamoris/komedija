@@ -71,7 +71,7 @@ const like2PressEl = document.getElementById('likePress_2');
 const like2CounterEl = document.getElementById('likeCount_2');
 
 // ANIMATION SNOW
-const snowfall = new Snowfall('snowCanvas', 50, 200);
+// const snowfall = new Snowfall('snowCanvas', 50, 200);
 
 async function counterStart() {
 
