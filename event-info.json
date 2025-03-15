@@ -56,6 +56,34 @@
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock"
          }
+      },
+      {
+         "@context": "https://schema.org",
+         "@type": "Event",
+         "name": "Открый микрофон в Кельне",
+         "startDate": "2025-03-21T19:00",
+         "location": {
+            "@type": "Place",
+            "name": "Allerweltshaus",
+            "address": {
+               "@type": "PostalAddress",
+               "streetAddress": "Geisselstraße 3-5",
+               "addressLocality": "Köln",
+               "postalCode": "50823",
+               "addressCountry": "DE"
+            }
+         },
+         "image": [
+            "https://skomedija.com/img/posters/poster3.png"
+         ],
+         "description": "Приходите на яркое русскоязычное стендап шоу в Кельне! Отличное настроение гарантировано.",
+         "offers": {
+            "@type": "Offer",
+            "url": "https://skomedija.com/",
+            "price": "0.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+         }
       }
    ]
 }

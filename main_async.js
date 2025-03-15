@@ -84,7 +84,7 @@ async function counterStart() {
    like2CounterEl.textContent = LIKE2_COUNT;
 
    like1PressEl.addEventListener('click', async () => {
-      snowfall.burstSnowflakes();
+      // snowfall.burstSnowflakes();
       const newValue = await counter1.incrementValue();
       LIKE1_COUNT += 1;
       like1CounterEl.textContent = LIKE1_COUNT;
@@ -93,7 +93,7 @@ async function counterStart() {
    });
 
    like2PressEl.addEventListener('click', async () => {
-      snowfall.burstSnowflakes();
+      // snowfall.burstSnowflakes();
       const newValue = await counter2.incrementValue();
       LIKE2_COUNT += 1;
       like2CounterEl.textContent = LIKE2_COUNT;

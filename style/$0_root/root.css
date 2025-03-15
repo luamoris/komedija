@@ -79,7 +79,8 @@
 
 /* MAIN ОСЕНЬ */
 ._scheme_color_1 {
-   --color_bg: linear-gradient(60deg, #27118D, #A651FD);
+   --color_bg: linear-gradient(60deg, #8b3563, #f27ead);
+   /* --color_bg: linear-gradient(60deg, #27118D, #A651FD); */
    --color-square-border: rgba(255, 255, 255, .1);
    --netcard: rgba(255, 255, 255, 0.1);
 
