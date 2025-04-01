@@ -7,6 +7,11 @@ import SchemeColor from "./javascript/SchemeColor.js";
 import LocalStorageManager from "./javascript/LocalStorageManager.js";
 import Audio from "./javascript/Audio.js";
 
+import Poster from "./javascript/Event.js";
+
+import NETWORKS from "./database/networks.js";
+import EVENTS from "./database/events.js";
+
 // ========== VALUES
 
 const bg = new BG();
@@ -44,6 +49,16 @@ btnMusic.addEventListener('click', () => {
    btnMusic.classList.toggle('_on');
 });
 
+// Networks
+function setDataToNetworks(data) {
+   data.forEach(net => {
+      const netEl = document.querySelector(`._${net.name}`);
+      netEl.href = net.link;
+   });
+}
+
+setDataToNetworks(NETWORKS);
+
 // Copy
 
 function copyText(element) {
@@ -55,7 +70,16 @@ function copyText(element) {
    }, 500);
 }
 
-const info1BtnEl = document.getElementById('infoCopyBtn_1');
-const info2BtnEl = document.getElementById('infoCopyBtn_2');
-info1BtnEl.addEventListener('click', () => copyText(info1BtnEl));
-info2BtnEl.addEventListener('click', () => copyText(info2BtnEl));
+// Posters
+const posterList = document.querySelector('.poster-list');
+EVENTS.forEach(async (event) => {
+
+   const date = new Date();
+   const eventDate = new Date(event.date.iso);
+   if (date > eventDate.setDate(eventDate.getDate() + 1)) return;
+
+   const poster = new Poster(event);
+   posterList.append(poster.getHtml());
+   await poster.start();
+});
+

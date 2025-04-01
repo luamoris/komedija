@@ -84,6 +84,34 @@
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock"
          }
+      },
+      {
+         "@context": "https://schema.org",
+         "@type": "Event",
+         "name": "Вечер молодой комедии в Дюссельдорфе.",
+         "startDate": "2025-04-12T19:00",
+         "location": {
+            "@type": "Place",
+            "name": "JugendKULTURcafé Franzmann",
+            "address": {
+               "@type": "PostalAddress",
+               "streetAddress": "Ratinger Str. 20",
+               "addressLocality": "Düsseldorf",
+               "postalCode": "40213",
+               "addressCountry": "DE"
+            }
+         },
+         "image": [
+            "https://i.postimg.cc/g2s1dwSk/poster-1.jpg"
+         ],
+         "description": "🌚 Скучали? Отличные новости – Вечер молодой комедии возвращается в Дюссельдорф!",
+         "offers": {
+            "@type": "Offer",
+            "url": "https://skomedija.com/",
+            "price": "0.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+         }
       }
    ]
 }
