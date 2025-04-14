@@ -71,6 +71,30 @@ const EVENTS = [
       },
       isPremiere: false,
    },
+   {
+      title: "🎤 Открытый микрофон в Кёльне",
+      description: [
+         "Кёльн, мы обещали — и мы вернулись!",
+         "Приглашаем вас совсем скоро провести вечер в компании хорошего юмора."
+      ],
+      location: {
+         name: "Allerweltshaus - Geisselstraße 3-5, 50823 Köln",
+         link: "https://maps.app.goo.gl/MNGFzbUVECoCQnmu8"
+      },
+      poster: {
+         src: "https://i.postimg.cc/59RGbDNf/poster-2.png",
+         alt: "Открытый микрофон в Кельне.",
+      },
+      date: {
+         normal: "Четверг, 24 Апреля | 18:45",
+         iso: "2025-04-24T18:45",
+      },
+      like: {
+         collection: "counters",
+         counters: 'like2',
+      },
+      isPremiere: false,
+   },
 ];
 
 export default EVENTS;
