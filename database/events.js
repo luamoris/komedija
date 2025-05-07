@@ -95,6 +95,31 @@ const EVENTS = [
       },
       isPremiere: false,
    },
+   {
+      title: "🥸 ШОУ ИСТОРИЙ",
+      description: [
+         "Никаких шуток — только настоящие истории от комиков.",
+         "Ну ладно, шутки тоже будут.",
+         "🎟️ Вход: любая бумажная купюра."
+      ],
+      location: {
+         name: "JugendKULTURcafé Franzmann, Дюссельдорф",
+         link: "https://maps.app.goo.gl/5KtNyjXo77ND27jE9"
+      },
+      poster: {
+         src: "https://i.postimg.cc/Xvkw3KWn/poster-3.jpg",
+         alt: "ШОУ ИСТОРИЙ в Дюссельдорфе.",
+      },
+      date: {
+         normal: "Пятница, 16 Мая | 19:00",
+         iso: "2025-05-16T19:00",
+      },
+      like: {
+         collection: "counters",
+         counters: 'like3',
+      },
+      isPremiere: true,
+   },
 ];
 
 export default EVENTS;
